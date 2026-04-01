@@ -1,0 +1,140 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #2563EB;
+  padding: 28px 40px;
+}
+
+header h1 {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+header p {
+  color: #dbeafe;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* datos del paciente */
+main {
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+section {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 28px 32px;
+}
+
+section h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 22px;
+}
+
+.fila {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 16px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+input[type="number"] {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-size: 14px;
+  color: #374151;
+  background-color: #ffffff;
+  font-family: inherit;
+}
+
+input::placeholder {
+  color: #9ca3af;
+}
+
+/* citas previas */
+.campo.completo {
+  flex: 1 1 100%;
+}
+
+textarea {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-size: 14px;
+  color: #374151;
+  background-color: #ffffff;
+  font-family: inherit;
+  resize: vertical;
+  min-height: 85px;
+}
+
+textarea::placeholder {
+  color: #9ca3af;
+}
+
+/* botones*/
+footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px 40px 20px;
+}
+
+button[type="button"] {
+  padding: 11px 28px;
+  border: 1px solid #d1d5db;
+  background-color: #ffffff;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #374151;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+button[type="submit"] {
+  padding: 11px 24px;
+  background-color: #2563EB;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: inherit;
+}

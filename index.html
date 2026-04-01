@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Fisioterapia</title>
+    <link rel="stylesheet" href="css/color.css" />
+  </head>
+
+  <body>
+    <header>
+        <h1>sistema de fisioterapia</h1>
+        <p>formulario de registro: cita medica</p>
+    </header>
+    <main>
+
+<!-- datos del paciente -->
+    <section>
+      <h2>Datos del Paciente</h2>
+
+      <div class="fila">
+        <div class="campo">
+          <label for="historia">N° Historia Clínica</label>
+          <input type="text" id="historia" name="historia" placeholder="HC-0001" />
+        </div>
+        <div class="campo">
+          <label for="nombre">Nombre Completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Juan Carlos García López" />
+        </div>
+      </div>
+
+      <div class="fila">
+        <div class="campo">
+          <label for="documento">N° Documento</label>
+          <input type="number" id="documento" name="documento" placeholder="1234567890" />
+        </div>
+        <div class="campo">
+          <label for="nacimiento">Fecha de Nacimiento</label>
+          <input type="date" id="nacimiento" name="nacimiento" />
+        </div>
+      </div>
+
+      <div class="fila">
+        <div class="campo" style="max-width: 48%;">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="3001234567" />
+        </div>
+      </div>
+    </section>
+
+<!-- citas previas -->
+<section>
+      <h2>Citas Previas</h2>
+
+      <div class="fila">
+        <div class="campo">
+          <label for="num-citas">N° de Citas Previas</label>
+          <input type="number" id="num-citas" name="num-citas" placeholder="0" min="0" />
+        </div>
+        <div class="campo">
+          <label for="fecha-ultima">Fecha Última Cita</label>
+          <input type="date" id="fecha-ultima" name="fecha-ultima" />
+        </div>
+      </div>
+
+      <div class="fila">
+        <div class="campo completo">
+          <label for="medico">Médico que Atendió</label>
+          <input type="text" id="medico" name="medico" placeholder="Dr. María González" />
+        </div>
+      </div>
+
+      <div class="fila">
+        <div class="campo completo">
+          <label for="resultado">Resultado Última Cita</label>
+          <textarea id="resultado" name="resultado" placeholder="Descripción de los resultados de la última cita..."></textarea>
+        </div>
+      </div>
+    </section>
+
+ <!-- estado de salud -->
+    <section>
+      <h2>Estado de Salud</h2>
+
+      <div class="fila">
+        <div class="campo completo">
+          <label for="diagnostico">Diagnóstico Principal</label>
+          <textarea id="diagnostico" name="diagnostico" placeholder="Ej: Lumbalgia crónica"></textarea>
+        </div>
+      </div>
+
+      <div class="fila">
+        <div class="campo completo">
+          <label for="sintomas">Síntomas Principales</label>
+          <textarea id="sintomas" name="sintomas" placeholder="Ej: Dolor, rigidez, limitación de movimiento"></textarea>
+        </div>
+      </div>
+
+      <div class="fila">
+        <div class="campo">
+          <label for="alergias">Alergias</label>
+          <textarea id="alergias" name="alergias" placeholder="Ej: Penicilina, látex"></textarea>
+        </div>
+        <div class="campo">
+          <label for="cronicas">Enfermedades Crónicas</label>
+          <textarea id="cronicas" name="cronicas" placeholder="Ej: Hipertensión, Diabetes tipo 2"></textarea>
+        </div>
+      </div>
+    </section>
+<!-- actividad realizada en la cita -->
+    <section>
+      <h2>Actividad Realizada en la Cita</h2>
+
+      <div class="fila">
+        <div class="campo">
+          <label for="fecha-cita">Fecha de Cita</label>
+          <input type="date" id="fecha-cita" name="fecha-cita" />
+        </div>
+        <div class="campo">
+          <label for="duracion">Duración de la Sesión</label>
+          <input type="text" id="duracion" name="duracion" placeholder="45 minutos" />
+        </div>
+      </div>
+
+      <div class="fila">
+        <div class="campo completo">
+          <label for="evaluacion">Evaluación Realizada</label>
+          <textarea id="evaluacion" name="evaluacion" placeholder="Ej: Evaluación de marcha, postura, rango de movimiento y fuerza muscular"></textarea>
+        </div>
+      </div>
+
+      <div class="fila">
+        <div class="campo completo">
+          <label for="ejercicios">Ejercicios Realizados</label>
+          <textarea id="ejercicios" name="ejercicios" placeholder="Ej: Estiramientos lumbares, fortalecimiento de core, ejercicios de equilibrio"></textarea>
+        </div>
+      </div>
+    </section>
+
+<!-- formula medica -->
+    <section>
+      <h2>Fórmula Médica</h2>
+
+      <div class="fila">
+        <div class="campo">
+          <label for="medicamentos">Medicamentos Prescritos</label>
+          <textarea id="medicamentos" name="medicamentos" placeholder="Ej: Naproxeno, Complejo B"></textarea>
+        </div>
+        <div class="campo">
+          <label for="dosificacion">Dosificación</label>
+          <textarea id="dosificacion" name="dosificacion" placeholder="Ej: 500mg cada 12 horas"></textarea>
+        </div>
+        <div class="campo">
+          <label for="duracion-trat">Duración del Tratamiento</label>
+          <textarea id="duracion-trat" name="duracion-trat" placeholder="Ej: 7 días"></textarea>
+        </div>
+      </div>
+    </section>
+  </main>
+<!-- botones -->
+  <footer>
+      <button type="button">Cancelar</button>
+      <button type="submit">Guardar Registro</button>
+    </footer>
+  </body>
+</html>
+
